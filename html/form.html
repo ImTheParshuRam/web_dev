@@ -1,27 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
 </head>
-<body>
-    <h1>
-        welcome to my show
-    </h1>
-    <form action="https://thecodehelp.in">
-        <label for="username"> Username: </label>
-
-        <input type="text" name ="username">
+    <body>
+        
+    
+       <h3>regestration form</h3>
+     <form action="parshu.php">
+    
+       
+        <input type="text" placeholder="username" id="101">
+        <br><br>
+        <input type="password" placeholder="password" id="102">
+        <br><br>
+        <label for="109">
+        <input type="radio" value="class XI" name="class" id="109">class XI
+        </label>
+        <label for="108">
+        <input type="radio" value="class XII" name="class" id="108">class XII
+        </label>
+        <br><br>
+        Select your subject
         <br>
-        <label for="password"> password: </label>
+        <label for="110">
+            <input type="checkbox" value="math" class="subject" id="110">math
+        </label>
+        <label for="111">
+            <input type="checkbox" value="chem" class="subject" id="111">chem
+        </label>
+         <label for="112">
+            <input type="checkbox" value="phy" class="subject" id="112">phy
+        </label> 
+        
+        <label for="113">
+            <input type="checkbox" value="cs" class="subject" id="113">cs
+        </label>
+        
+         <label for="114">
+            <input type="checkbox" value="bio" class="subject" id="114">bio
+         </label>
+        
+         <br><br>
+        Select your city
+        <select name="City" >
+            <option value="mumbai">mumbai</option>
+            <option value="chennai">chennai</option>
+            <option value="kolkata">kolkata</option>
+            <option value="delhi">delhi</option>
+        </select>
+         <br><br>
+        
+        <textarea name="feedback" id="101"  rows="2" placeholder="give your valuable feedback"></textarea>
+            <br><br>
+            <input type="submit" value="submit" >
 
-        <input type="password" name ="password">
-        <br>
-        <input type="submit" value="submit">
-    </form>
+      </form>
 
-</body>
 
+    
+    </body>
 </html>
