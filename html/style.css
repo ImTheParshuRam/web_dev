@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#sw1{
+    color: blue;
+}
+a:hover{
+    color: orangered;
+}
+.swamiji{
+    border: 10px solid burlywood;
+}
+.title{
+    background-color: orangered;
+    color: royalblue;
+    font-size: large;
+    width: fit-content;
+    gap: 2px;
+    
+}
+.title:hover{
+    color: orangered;
+    background-color: royalblue;
+    
+}
+.list{
+    background-color: black;
+    font-size: medium;
+    font-style: italic;
+    
+}
