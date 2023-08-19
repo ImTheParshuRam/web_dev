@@ -3,29 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrapper{
+    height: 100vh;
+    
+}
 html{
     scroll-behavior: smooth;
 }
-#sw1{
-    color: blue;
-}
+
 a:hover{
-    color: orangered;
+    transform: scale(1.03);
+    text-shadow: 1em;
+
 }
 .swamiji{
     border: 10px solid burlywood;
+    animation: pic_color infinte cubic-bezier(0.42, 0, 0.69, 0.97) 0.5s ;
+    
+    
+}
+@keyframes pic_color {
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+
+    }
+    50%{
+        filter: grayscale(1);
+        transform: scale(1.1);
+    }
+    100%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
 }
 .title{
-    background-color: orangered;
-    color: royalblue;
-    font-size: large;
-    width: fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+    font-size: 24px;
+    margin: 2% auto;
+    transform: scale(1);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
     gap: 2px;
     
 }
 .title:hover{
-    color: orangered;
-    background-color: royalblue;
+    transform: scale(1.03);
     
 }
 .list{
@@ -33,4 +59,45 @@ a:hover{
     font-size: medium;
     font-style: italic;
     
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 0% 10% 10% ;
+    align-content: space-between;
+    gap: 22px;
+}
+.para{
+    
+    font-weight: 100;
+    font-style: normal;
+    padding: 2% ;
+    width:70%;
+
+}
+.images{
+    width: 40%;
+}
+.sub_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+a{
+    text-decoration: none;
+    color: black;    
+}
+.tag{
+    transform: scale(1.0);
+}
+.tag:hover{
+    transform: scale(1.2);
+    text-shadow: black;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-content: space-between;
 }

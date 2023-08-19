@@ -41,7 +41,9 @@
     filter: grayscale(100%);
     box-shadow: 0 0 20px #333;
     object-fit: cover;
+
 }
+
 .card:hover img{
     transform:scale(1.03);
     transition: 0.5s;
