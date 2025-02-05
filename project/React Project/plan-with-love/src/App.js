@@ -1,9 +1,19 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import data from './data'
 import Tours from "./components/Tours";
 
 const App = () => {
-
+  setTimeout(() => {
+    console.log('y')
+  }, 0);
+  console.log("x")
+  useEffect(() => {
+  
+  }, [])
+  
+  setTimeout(() => {
+    console.log('z')
+  }, 10);
   const [tours, setTours] = useState(data);
 
   function removeTour(id) {

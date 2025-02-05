@@ -1,9 +1,9 @@
 import Card from './Card'
-function Tours({tours, removeTour}) {
+export function Tours ({tours, removeTour}) {
     return (
         <div className='container'>
             <div>
-                <h2 className='title'> Plan With Love</h2>
+                <h2 className='title'> Plan Your Trip</h2>
             </div>
             <div className='cards'>
                 {
@@ -16,4 +16,3 @@ function Tours({tours, removeTour}) {
     );
 }
 
-export default Tours;
